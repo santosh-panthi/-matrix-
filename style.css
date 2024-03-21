@@ -1,0 +1,375 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+  width: 100%;
+  background-color: whitesmoke;
+  
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif";
+}
+nav {
+  
+  background-color: white;
+  box-shadow: 3px 3px 3px rgba(222, 209, 209, 0.1);
+  border-bottom: 1px   solid #cebebe;
+  position: fixed;
+  top: 0;
+  width: 100%;
+ 
+  
+
+}
+nav ul {
+  width: 100%;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+nav li {
+  height: 7vh;
+  margin-right: 10px;
+}
+nav a {
+  height: 100%;
+  padding: 0 2vw;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  color: black;
+  font-size: 2.3vh;
+}
+nav a:hover {
+  background-color: #f0f0f0;
+}
+nav li:nth-child(1) {
+  margin-right: auto;
+}
+.sidebar {
+  /* display: none; */
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100vh;
+  width: 250px;
+  z-index: 999;
+  background-color: rgba(179, 179, 179, 0.2);
+  backdrop-filter: blur(100px);
+  box-shadow: -10px 0 10px rgba(217, 212, 212, 0.1);
+  display: none;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.sidebar li {
+  width: 100%;
+}
+.sidebar a {
+  width: 100%;
+}
+.sidebar a:hover {
+  /* width: 100%; */
+  background-color: rgb(199, 205, 199);
+}
+.hideOnMobile{
+  display: block;
+}
+
+#main {
+  height: 100%;
+  width: 100%;
+  
+}
+
+#main header {
+ 
+  /* background-color: red; */
+  padding: 8px 6vw;
+  width: 100%;
+  height: auto;
+margin-bottom: 30px;
+  
+}
+#main header h1{
+  height: 100%;
+  width: 100%;
+  font-size: 80px;
+  /* font-weight: 8; */
+  line-height: 100px;
+  word-spacing: 10px;
+  letter-spacing: -2px;
+  text-align: center;
+
+}
+
+#intro{
+  width: 100%;
+  min-height: 72vh;
+  /* height: ; */
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+#intro #what{
+  padding: 3vw 2vw;
+  width: 40%;
+  
+  margin-left: 60px;
+  margin-right: 0px;
+
+}
+#what h3 ,#illusion h3, #truth h3, #liberating h3{
+  font-size:3.1vw;
+}
+#what p, #illusion p,#truth p , #liberating p{
+  font-size: 30px;
+  font-weight: 500;
+ 
+}
+#photo-box{
+  padding: 3vw 2vw;
+  width: 40%;
+
+  height: 740px;
+  min-height: 72vh;
+  
+  margin-right: 60px;
+}
+
+#intro #matrix-photo{
+  /* margin-right: 30px; */
+  /* padding-right: 50px; */
+  width: 100%; 
+  height: 100%;
+background-image: url(https://w0.peakpx.com/wallpaper/71/314/HD-wallpaper-movie-the-matrix-resurrections-carrie-anne-moss-keanu-reeves.jpg); 
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+
+
+}
+#intro2{
+  /* border: 2px solid black; */
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 30px 60px;
+  width: 100%;
+  height: auto;
+  gap: 10%;
+}
+#intro2 #illusion{
+  padding: 3vw 2vw;
+  width: 40%;
+  
+  /* width: 100%; */
+  
+  
+}
+#intro2 #truth{
+  padding: 3vw 2vw;
+  width: 40%;
+  
+  
+
+  
+ 
+
+}#intro3{
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 23vw;
+
+}
+
+#intro3 #liberating{
+  width: 100%;
+  height: auto;
+  /* margin: 0 400px; */
+  /* border: 2px solid black; */
+}
+
+
+@media (min-width: 481px) and (max-width: 1024px){
+  .hideOnMobile {
+    display: none;
+  }
+ 
+  #intro,#intro2{
+    display: block;
+  }
+  #intro3{
+    display: block;
+    padding: 10px 30px;
+  }
+
+  #intro #what, #intro2 #illusion, #intro2 #truth ,#intro3 #liberating{
+    padding: 10px 10px;
+    width: 100%;
+    
+    margin: 0px;
+   
+  
+  }
+  #main header h1{
+
+    font-size: 60px;
+    height: 100%;
+    width: 100%;
+   
+    line-height: 65px;
+    word-spacing: 10px;
+    letter-spacing: -2px;
+  }
+  #what h3,#illusion h3, #truth h3, #liberating h3{
+    font-size:40px;
+  }
+  #photo-box{
+    padding: 3vw 0;
+    width: 100%;
+  
+    height: 600px;
+    min-height: 52vh;
+    /* 
+    margin-right: 60px; */
+  }
+
+}
+@media (max-width: 481px) {
+  .hideOnMobile {
+    display: none;
+  }
+  .sidebar {
+    
+    width: 100%;
+  }
+  #main header h1{
+    height: 100%;
+    width: 100%;
+    font-size: 36px;
+    line-height: 50px;
+    word-spacing: 10px;
+    letter-spacing: -1px;
+    
+  }
+
+  #intro,#intro2{
+    display: block;
+    padding: 5px;
+  }
+  #intro3{
+    display: block;
+    padding:  5px;
+    padding: 20px 40px;
+  }
+#intro #what,#intro2 #illusion , #intro2 #truth ,#intro #liberating{
+  padding: 20px 40px;
+  width: 100%;
+  
+  margin-left: 0px;
+  margin-right: 0px;
+
+}
+
+#what h3,#illusion h3, #truth h3, #liberating h3{
+  font-size:30px;
+}
+#what p,#illusion p, #truth p, #liberating p{
+  font-size: 20px;
+  font-weight: 500;
+}
+#photo-box{
+  padding: 3vw 8px;
+  width: 100%;
+
+  height: 400px;
+  /* min-height: 52vh; */
+  /*  */
+  /* margin-right: 60px; */
+}
+
+}
+@media (min-width: 1025px) {
+  .menu-button {
+    display: none;
+  }
+  .sidebar {
+    display: none;
+  }
+}
+
+/* Base styles */
+.footer {
+  background-color: #333;
+  color: #fff;
+  padding: 40px 0;
+ 
+  bottom: 0;
+  width: 100%;
+}
+
+.footer__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+
+.footer__logo h2 {
+  width: 100px;
+}
+
+.footer__links ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.footer__links ul li {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+.footer__links ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.footer__social a {
+  margin-right: 10px;
+}
+
+.footer__social img {
+  width: 30px;
+}
+
+.footer__copyright {
+  text-align: center;
+  margin-top: 20px;
+}
+
+/* Media queries */
+@media screen and (max-width: 768px) {
+  .footer__container {
+      flex-direction: column;
+      text-align: center;
+  }
+
+  .footer__links ul li {
+      display: block;
+      margin-bottom: 10px;
+  }
+
+  .footer__social {
+      margin-top: 20px;
+  }
+}
+

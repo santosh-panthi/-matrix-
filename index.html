@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav>
+      <ul class="sidebar">
+        <li onclick="hideSidebar()">
+          <a><i style="font-size: 40px" class="ri-close-line"></i></a>
+        </li>
+        <li><a href="">Blog</a></li>
+        <li><a href="">Products</a></li>
+        <li><a href="">About</a></li>
+        <li><a href="">Forum</a></li>
+        <li><a href="">Login</a></li>
+      </ul>
+      <ul>
+        <li><a href="">Matrix</a></li>
+        <li class="hideOnMobile"><a href="">Blog</a></li>
+        <li class="hideOnMobile"><a href="">About</a></li>
+        <li class="hideOnMobile"><a href="">Forum</a></li>
+        <li class="hideOnMobile"><a href="">Products</a></li>
+        <li class="hideOnMobile"><a href="">Login</a></li>
+
+        <li class="menu-button" onclick="showSidebar()">
+          <a><i class="ri-menu-line"></i></a>
+        </li>
+      </ul>
+    </nav>
+   
+
+    <div id="main">
+      <header>
+        <h1>Escaping the Matrix: <br />Embracing Truth and Liberation</h1>
+      </header>
+
+      <div id="intro">
+        <div id="what">
+          <h3>What is Matrix?</h3>
+          <p>
+            The Matrix symbolizes the complex network of illusions that dictate
+            our perception of reality. It encompasses societal norms, cultural
+            narratives, and personal beliefs that confine our minds and limit
+            our potential. Escaping the Matrix entails transcending these
+            illusions, questioning the narratives that govern our lives, and
+            reclaiming sovereignty over our thoughts and actions. It's a journey
+            of self-discovery and liberation, inviting us to confront our
+            deepest fears and embrace our true essence. Breaking free from the
+            Matrix is about awakening to the truth and stepping into a life of
+            authenticity and freedom.
+          </p>
+        </div>
+        <div id="photo-box">
+          <div id="matrix-photo"></div>
+        </div>
+      </div>
+      <div id="intro2">
+        <div id="illusion">
+          <h3>The Illusion of Reality</h3>
+          <p>
+            At the heart of the Matrix lies the illusion of reality—a
+            meticulously crafted simulation that deceives the senses and
+            confines the mind. In our own lives, this metaphorical Matrix
+            manifests as societal norms, cultural conditioning, and personal
+            beliefs that shape our perception of the world. From an early age,
+            we are immersed in a web of narratives and expectations that dictate
+            our thoughts, actions, and aspirations. But what if this reality is
+            but a facade—a construct designed to keep us docile and compliant?
+          </p>
+        </div>
+        <div id="truth">
+          <h3>Awakening to Truth</h3>
+          <p>
+            Escaping the Matrix begins with a simple yet profound realization:
+            the recognition that reality is not always as it seems. It requires
+            the courage to question the status quo, challenge ingrained
+            assumptions, and embrace the discomfort of uncertainty. Like Neo,
+            the protagonist of "The Matrix," we must venture down the rabbit
+            hole of introspection, peeling back the layers of illusion to
+            uncover the truth that lies beneath.
+          </p>
+        </div>
+      </div>
+      <div id="intro3">
+        <div id="liberating">
+          <h3>Liberating the Soul</h3>
+          <p>
+            In the end, escaping the Matrix is more than a philosophical
+            concept—it is a profound spiritual journey that invites us to
+            transcend the limitations of the mind and embrace the boundless
+            potential of the human spirit. As we awaken to the truth of our
+            existence, may we remember that true liberation lies not in escaping
+            the Matrix, but in realizing that we were never truly imprisoned to
+            begin with.
+          </p>
+        </div>
+      </div>
+    
+    <br>
+    <footer class="footer">
+      <div class="footer__container">
+          <div class="footer__logo">
+              <h2>Matrix</h2>
+          </div>
+          <div class="footer__links">
+              <ul>
+                  <li><a href="#">Home</a></li>
+                  <li><a href="#">About</a></li>
+                  <li><a href="#">Services</a></li>
+                  <li><a href="#">Contact</a></li>
+              </ul>
+          </div>
+          <div class="footer__social">
+              <a href="#"><i class="ri-facebook-circle-fill"></i></a>
+              <a href="#"><i class="ri-twitter-fill"></i></a>
+              <a href="#"><i class="ri-instagram-fill"></i></a>
+          </div>
+      </div>
+      <div class="footer__copyright">
+          <p>&copy; 2024 escapematrix.com. All rights reserved.</p>
+      </div>
+  </footer>
+</div>
+   <script>
+  function showSidebar() {
+    document.querySelector(".sidebar").style.display = "flex";
+  }
+  function hideSidebar() {
+    document.querySelector(".sidebar").style.display = "none";
+  }
+</script>
+
+  </body>
+</html>
